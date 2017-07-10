@@ -1,2 +1,9 @@
 <!--goodname.wxml-->
-<text>goodname.wxml</text>
+<!-- <text>goodname.wxml</text> -->
+<view class="container">
+    <view class="titlebar">起名信息录入</view>
+    <view class="name">
+        <textarea  />
+    </view>>
+
+</view>
