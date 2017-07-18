@@ -1,11 +1,14 @@
 // goodname.js
+var app = getApp();
+var Util = require('../../utils/util.js');
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    username:"null"
+    username:"null123"
     
   },
 
@@ -22,9 +25,9 @@ Page({
   uploaduserinfo: function(e) {
       wx.request({
           url: "url",
-          data: data,
+          data: Util.json2Form({"username":"fffffffee"}),
           header: {
-              "Content-Type": "application/json"
+              "Content-Type": "application/x-www-form-urlencoded"
           },
           method: "POST",
           success: function(res) {
