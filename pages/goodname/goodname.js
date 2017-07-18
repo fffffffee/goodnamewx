@@ -5,9 +5,36 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    username:"null"
+    
   },
 
+  /**
+   * 提交按钮函数
+   */
+  btnHandler_submit: function(e) {
+    uploaduserinfo();
+  },  
+
+  /**
+   * 提交用户数据
+   */
+  uploaduserinfo: function(e) {
+      wx.request({
+          url: "url",
+          data: data,
+          header: {
+              "Content-Type": "application/json"
+          },
+          method: "POST",
+          success: function(res) {
+            console.log(res.data)
+          },
+      })
+  },
+  /**
+   * 
+   */
   /**
    * 生命周期函数--监听页面加载
    */

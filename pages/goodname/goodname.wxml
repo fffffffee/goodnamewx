@@ -3,7 +3,10 @@
 <view class="container">
     <view class="titlebar">起名信息录入</view>
     <view class="name">
-        <textarea  />
-    </view>>
-
+        <text>用户名</text>
+        <textarea autoheight value="{{username}}" />
+    </view>
+    <view class="vol">
+        <button class="btn-submit" size="default" bindtap="btnHandler_submit">提交</button>
+    </view>
 </view>

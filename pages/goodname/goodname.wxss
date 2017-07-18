@@ -1,1 +1,10 @@
 /* goodname.wxss */
+textarea {
+    font-size: 50rpx;
+    width: 96%;
+    margin: 0 auto;
+    padding: 10rpx;
+    border-radius: 10rpx;
+    border: 1px solid;
+    background-color: #ffffff;
+}
